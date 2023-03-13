@@ -9,11 +9,54 @@ a{
 }
 
 
-
+/* LANDING PAGE */
 #landingpage{
     background-color: black;
 }
 
 #landingpage .card-body{
     height: 200px;
+}
+
+/* EVENT MAIL */
+:root{
+    --m-bgblack: #0D0D0D;
+    --m-night-blue: #023373;
+    --m-blue: #0339A6;
+    --m-lightblue: #0476D9;
+    --m-contrast: #63F2F2;
+}
+
+#event-mail{
+    background-color: var(--m-bgblack);
+}
+#event-mail header{
+    height: 100px;
+    background: rgb(2,51,115);
+    background: linear-gradient(180deg, rgba(2,51,115,1) 18%, rgba(13,13,13,1) 100%);
+}
+.jumbo{
+    max-width: 1200px;
+    height: 600px;
+}
+.jumbo img{
+    width: 600px;
+    height: 100%;
+}
+#event-mail .card-head{
+    background: rgb(2,51,115);
+    background: linear-gradient(180deg, rgba(2,51,115,1) 18%, rgba(13,13,13,1) 100%);
+    border: 2px solid white;
+    border-bottom: none;
+}
+#event-mail .card-body{
+    background-color: var(--m-bgblack);
+    border: 2px solid white;
+    border-top: none;
+}
+#event-mail label{
+    color: var(--m-contrast);
+}
+#event-mail input{
+    color: white;
 }
