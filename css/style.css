@@ -1,0 +1,11 @@
+/* .debug{
+    border: 2px solid red;
+} */
+
+#landingpage{
+    background-color: black;
+}
+
+#landingpage .card-body{
+    height: 200px;
+}
