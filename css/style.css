@@ -26,7 +26,19 @@ a{
     --m-lightblue: #0476D9;
     --m-contrast: #63F2F2;
 }
-
+.canvas{
+    width: 25vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:999;
+}
+.canvas ul li{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 #event-mail{
     background-color: var(--m-bgblack);
 }
@@ -38,6 +50,7 @@ a{
 .jumbo{
     max-width: 1200px;
     height: 600px;
+    position: relative;
 }
 .jumbo img{
     width: 600px;
@@ -59,4 +72,14 @@ a{
 }
 #event-mail input{
     color: white;
+}
+.info-guestlist{
+    position: absolute;
+    bottom: -15px;
+    left: 50;
+    background-color: var(--m-contrast);
+    border-radius: 10px;
+    border: 2px solid white;
+    font-weight: bold;
+    
 }
