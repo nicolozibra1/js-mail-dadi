@@ -25,6 +25,7 @@ const guestList = [
     'aaronharris89@hotmail.com',
     'annettelee12@gmail.com',
     'tomwilson48@yahoo.com',
+    'nico.zibra@gmail.com'
 ]
 
 const btn = document.getElementById('search');
@@ -39,11 +40,16 @@ btn.addEventListener('click', function (e) { e.preventDefault();
     }
    }
 
-   if(guest) {
-    console.log('Complimenti! Sei nella lista degli invitati.')
+   const cardCheckGuest = document.querySelector('.card-checkguest')
+   const checkResult = document.querySelector('.check-result')
+
+   if(guest) {  
+    cardCheckGuest.classList.add('d-none')
+    checkResult.innerHTML = `<h1 class="text-white text-center">Complimenti! Sei nella lista degli invitati.</h1>`;
    }
    else {
-    console.log('Ci dispiace, ma non sei presente nella lista.');
+    cardCheckGuest.classList.add('d-none')
+    checkResult.innerHTML = `<h1 class="text-white text-center">Ci dispiace, non sei presente nella lista.</h1>`;
    }
 
 });
