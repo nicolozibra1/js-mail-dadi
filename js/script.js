@@ -12,8 +12,8 @@ const guestList = [
 
 const btn = document.getElementById('search');
 
-btn.addEventListener('click', function (e) { e.preventDefault();
-   let guest = false;
+btn.addEventListener('click', function(e) { e.preventDefault ()
+   let guest = false
    const userMail = document.getElementById('usermail').value;
 
    for(let i = 0; i < guestList.length; i++){
