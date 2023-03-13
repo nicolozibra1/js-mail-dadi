@@ -2,6 +2,14 @@
     border: 2px solid red;
 } */
 
+/* UTILITY */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
 #landingpage{
     background-color: black;
 }
