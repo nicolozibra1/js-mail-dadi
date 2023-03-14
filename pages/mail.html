@@ -9,17 +9,18 @@
     <title>Event - Check the invite</title>
 </head>
 <body id="event-mail">
-    <header>
+    <header class="d-flex align-items-center justify-content-center">
         <h1 class="text-white text-uppercase px-5 py-2">party night</h1>
     </header>
     
     <main>
-        <div class="canvas d-flex justify-content-center d-none">
+        <div class="canvas d-flex flex-column align-items-center d-none">
             <ul class="list-unstyled py-5">
                 <li>clecliafradella@gmail.com</li>
                 <li>marcoacciari@gmail.com</li>
                 <li>samuelpanicucci@gmail.com</li>
             </ul>
+            <button class="close-canvas">Chiudi</button>
         </div>
         <div class="jumbo container d-flex justify-content-center">
             <img src="../img/event-mail-jumbo.jpeg" alt="" class="debug">
@@ -34,7 +35,7 @@
                         </div>
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
                             <form class="form-guestlist d-flex flex-column justify-content-center align-items-center">
-                                <label for="usermail" class="pb-2 text-center">Indirizzo email</label>
+                                <label for="usermail" class="pb-2 text-center"><strong>Indirizzo email</strong></label>
                                 <input type="email" name="usermail" id="usermail" class="w-100 bg-dark">
                                 <button type="submit" id="search" class="mt-3">Cerca</button>
                             </form>

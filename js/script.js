@@ -39,6 +39,13 @@ btn.addEventListener('click', function(e) { e.preventDefault ()
 const btnList = document.querySelector('.info-guestlist');
 
 btnList.addEventListener('click', function () {
-    const canvas = document.querySelector('.canvas');
+    let canvas = document.querySelector('.canvas');
     canvas.classList.toggle('d-none');
+})
+
+const closeCanvas = document.querySelector('.close-canvas');
+
+closeCanvas.addEventListener('click', function () {
+    let canvas = document.querySelector('.canvas');
+    canvas.classList.add('d-none');
 })

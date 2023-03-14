@@ -55,6 +55,8 @@ a{
 .jumbo img{
     width: 600px;
     height: 100%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgb(255, 255, 255) 0px 18px 250px -10px;
 }
 #event-mail .card-head{
     background: rgb(2,51,115);
@@ -81,5 +83,14 @@ a{
     border-radius: 10px;
     border: 2px solid white;
     font-weight: bold;
-    
+}
+.info-guestlist:hover, #search:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+#search{
+    background-color: var(--m-contrast);
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
 }
